@@ -1,5 +1,4 @@
 from setuptools import setup, find_packages
-from py_sc_fermi import __version__ as VERSION
 
 readme = "README.md"
 long_description = open(readme).read()
@@ -11,7 +10,7 @@ config = {
     "author" : "alexsquires",
     "author_email": "alexsquires@gmail.com",
     "url": "https://github.com/alexsquires/dwayne", 
-    "version": VERSION, 
+    "version": "0.0.1", 
     "python_requires": ">=3.9",
     "license": "MIT",
     "packages": ["dwayne","stanley","tracy"],

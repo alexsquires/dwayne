@@ -1,6 +1,6 @@
 from ase import Atoms
 from mchammer.observers.base_observer import BaseObserver
-from localenv import LocalNeiboroughCounter, NTMChannelCounter, PercolationTracker
+from .localenv import LocalNeiboroughCounter, NTMChannelCounter, PercolationTracker
 
 
 class LocalEnvObserver(BaseObserver):
