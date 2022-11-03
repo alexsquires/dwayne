@@ -10,7 +10,7 @@ class LocalEnvObserver(BaseObserver):
         background: list[str],
         cutoff: float = 3.0,
         interval: int = None,
-        return_type=dict,
+        return_type=list,
     ):
         """Instantiate an BaseLocalEnvObserver object"""
         tag = "LocalNeighoroughObserver"
@@ -22,7 +22,7 @@ class LocalEnvObserver(BaseObserver):
 
     def get_observable(self, structure: Atoms) -> dict:
         lenv = LocalNeiboroughCounter(structure, self.background, self.cutoff)
-        return {"environment_counts": lenv.get_environments()}
+        return lenv.get_environments()
 
 
 class NTMObserver(BaseObserver):
